@@ -48,14 +48,14 @@ var Hello = React.createClass({
     return (
       <div style={this._styles}>
         <p>
-        	Hello <strong>{this.state.name}</strong>
+          Hello <strong>{this.state.name}</strong>
         </p>
         <input
           onChange={this._changeName}
           placeholder="Enter name"
           type="text"
           value={this.state.name}
-					/>
+	  />
       </div>
      );
   }
