@@ -1,8 +1,8 @@
 // MODEL (Mvc)
 var NameStore = {
-	_name: '',
-	set: function (value) {
-  	var nameIn = document.getElementsByTagName('input')[0];
+  _name: '',
+  set: function (value) {
+    var nameIn = document.getElementsByTagName('input')[0];
     var nameOut = document.getElementsByTagName('span')[0];
     nameIn.value = value;
     nameOut.innerHTML = value;

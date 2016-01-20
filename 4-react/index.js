@@ -1,13 +1,13 @@
 var Hello = React.createClass({
   render: function () {
     return (
-    	<div>
-       	<p>
-	        Hello <strong>Brev</strong>
+      <div>
+        <p>
+          Hello <strong>Brev</strong>
         </p>
-			  <input placeholder="Enter name" type="text" />
-			</div>
- 		);
+        <input placeholder="Enter name" type="text" />
+      </div>
+    );
   }
 });
 

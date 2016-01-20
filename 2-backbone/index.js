@@ -5,24 +5,24 @@ var NameModel = Backbone.Model.extend({
 
 // VIEW CONTROLLER (mVC)
 var ViewClass = Backbone.View.extend({
-	template: _.template($('#template').html()),
+  template: _.template($('#template').html()),
   events: {
- 		'submit form': '_changeName'
+    'submit form': '_changeName'
   },
   _changeName: function (event) {
-		var name = event.currentTarget.elements[0].value;
+    var name = event.currentTarget.elements[0].value;
     event.preventDefault();
     this.model.set({ name: name });
- 	},
-	initialize: function () {
-		this.model.on('change', this.render, this);
+  },
+  initialize: function () {
+    this.model.on('change', this.render, this);
     this.render();
   },
- 	render: function () {
-		var markup = this.template(this.model.attributes);
-		this.$el.html(markup);
+  render: function () {
+    var markup = this.template(this.model.attributes);
+    this.$el.html(markup);
     return this;
- 	}
+  }
 });
 
 // CONTROLLER (mvC)
